@@ -1,0 +1,38 @@
+<html>
+  <head>    
+   <script>
+     function ver(){//chamando a função ver
+      var fig1 = "https://cdn.pensador.com/img/imagens/pe/ns/pensador_bom_dia_para_alguem_especial_01.jpg?auto_optimize=low&width=655";
+      var fig2 = "https://cdn.pensador.com/img/imagens/pe/ns/pensador_boa_tarde_com_carinho_03.jpg?auto_optimize=low&width=655";
+      var fig3 = "https://www.frasesdobem.com.br/wp-content/uploads/2020/05/boa-noite-que-voce.jpg";
+      var fig4 = "https://thumbs.dreamstime.com/b/rob%C3%B4s-de-trabalhadores-constru%C3%A7%C3%A3o-est%C3%A3o-corrigindo-o-erro-os-do-trabalhador-consertando-deixando-usu%C3%A1rio-site-saber-que-ele-172394653.jpg";
+ 
+      var msg = document.getElementById("msg").value;
+ 
+      var img = document.getElementById("foto");
+ 
+      if (msg=="bom dia"){
+          img.src = fig1;
+      }else if (msg=="boa tarde"){
+          img.src = fig2;
+      }else if (msg=="boa noite"){
+          img.src = fig3;
+      }else{
+          img.src = fig4;
+      }
+ 
+ 
+     }
+   </script>
+  </head>
+  <body>    
+    Mensagem<input type="text" id="msg">
+    <br><br>
+ 
+    <input type="button" value="Ver" onClick="ver()">
+    <br><br>
+ 
+    <img src="" id="foto" style="width: 200px; height: 150px" />
+ 
+  </body>
+</html>
