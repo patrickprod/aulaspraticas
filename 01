@@ -1,0 +1,30 @@
+<html>
+  <head>    
+   <script>
+     function calcular(){
+      var aa = document.getElementById("aa").value;//criar variavel aa
+      var an = document.getElementById("an").value;//criar variavel an
+ 
+      var idade = parseInt(aa)-parseInt(an);//criar variavel idade
+ 
+      document.getElementById("idade").value = idade;//trazer valor armazenado no campo idade
+ 
+     }
+   </script>
+ 
+  </head>
+  <body>
+ 
+    Ano atual
+    <input type="text" id="aa"><br>    
+ 
+    Ano nascimento
+    <input type="text" id="an"><br>
+ 
+    <input type="button" value="calcular" onClick="calcular()"><br>
+ 
+    Idade
+    <input type="text" id="idade"><br>
+ 
+  </body>
+</html>
